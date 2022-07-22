@@ -123,6 +123,12 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="emailInvalid" xml:space="preserve">
+    <value>Email is invalid</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email is required</value>
+  </data>
   <data name="home" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -130,7 +136,13 @@
     <value>Home page</value>
   </data>
   <data name="NickName" xml:space="preserve">
-    <value>Name</value>
+    <value>Nickname</value>
+  </data>
+  <data name="nicknameInvalid" xml:space="preserve">
+    <value>Nickname is invalid</value>
+  </data>
+  <data name="nicknameRequired" xml:space="preserve">
+    <value>Nickname is required</value>
   </data>
   <data name="save" xml:space="preserve">
     <value>Save</value>

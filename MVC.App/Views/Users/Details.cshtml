@@ -1,19 +1,6 @@
 ﻿@model MVC.App.Models.UserViewModel
 @inject LocService SharedLocalizer
 
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>View</title>
-</head>
-<body>
-
 <div>
     <h4>UserViewModel</h4>
     <hr />
@@ -33,7 +20,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Index">@SharedLocalizer.GetLocalizedHtmlString("backToForm")Back to form</a>
+    <a asp-action="Index">@SharedLocalizer.GetLocalizedHtmlString("backToForm")</a>
 </div>
-</body>
-</html>
+

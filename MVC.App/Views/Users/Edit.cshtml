@@ -2,18 +2,6 @@
 @using MVC.App.Resources
 @inject LocService SharedLocalizer
 
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>User view</title>
-</head>
-<body>
 
 <h4>UserViewModel</h4>
 <hr />
@@ -41,5 +29,3 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-</body>
-</html>

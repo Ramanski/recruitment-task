@@ -123,6 +123,9 @@
   <data name="Email" xml:space="preserve">
     <value>Mail</value>
   </data>
+  <data name="emailInvalid" xml:space="preserve">
+    <value>Email jest nieprawidłowy</value>
+  </data>
   <data name="EmailRequired" xml:space="preserve">
     <value>Pole jest obowiązkowe</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="NickName" xml:space="preserve">
     <value>Imię</value>
+  </data>
+  <data name="nicknameInvalid" xml:space="preserve">
+    <value>Imię jest nieprawidłowe</value>
   </data>
   <data name="NicknameRequired" xml:space="preserve">
     <value>Pole jest obowiązkowe</value>

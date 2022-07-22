@@ -5,12 +5,12 @@ namespace MVC.App.Models
 
     public class UserViewModel
     {
-        [Required(ErrorMessage = "NicknameRequired", AllowEmptyStrings = false)]
-        [RegularExpression(@"^[a-zA-Z]{1,30}$", ErrorMessage = "NicknameInvalid")]
+        [Required(ErrorMessage = "nicknameRequired", AllowEmptyStrings = false)]
+        [RegularExpression(@"^[a-zA-Z]{1,30}$", ErrorMessage = "nicknameInvalid")]
         public string NickName { get; set; }
 
-        [Required(ErrorMessage = "Email is not valid")]
-        [DataType(DataType.EmailAddress, ErrorMessage = "NicknameInvalid")]
+        [Required(ErrorMessage = "emailRequired")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "emailInvalid")]
         public string Email { get; set; }
     }
 }
