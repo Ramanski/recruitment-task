@@ -9,76 +9,24 @@ namespace MVC.App.Controllers
         // GET: UsersController
         public ActionResult Index()
         {
-            return View("UserEdit", new UserViewModel());
+            return View("Edit", new UserViewModel());
         }
 
         // GET: UsersController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(UserViewModel userViewModel)
         {
-            return View();
+            return View(userViewModel);
         }
 
         // GET: UsersController/Create
-        public ActionResult Create()
+        public ActionResult Create(UserViewModel userViewModel)
         {
-            return View();
-        }
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Details), userViewModel);
+            }
 
-        // POST: UsersController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: UsersController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: UsersController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: UsersController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: UsersController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }

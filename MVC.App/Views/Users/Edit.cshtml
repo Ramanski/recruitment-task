@@ -19,15 +19,15 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="View">
+        <form asp-action="Create">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NickName" class="control-label"></label>
+                <label class="control-label">@SharedLocalizer.GetLocalizedHtmlString(nameof(UserViewModel.NickName))</label>
                 <input asp-for="NickName" class="form-control" />
                 <span asp-validation-for="NickName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+                <label class="control-label">@SharedLocalizer.GetLocalizedHtmlString(nameof(UserViewModel.Email))</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
